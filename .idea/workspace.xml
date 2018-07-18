@@ -1,70 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28857e16-9aec-4c74-9ed6-5f6e4e2ab0fd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/0-168624d07d0d91d0a1c4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0-168624d07d0d91d0a1c4.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0.12ceb7889626af2249e3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0.12ceb7889626af2249e3.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-0bd17596839218680cef.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1-0bd17596839218680cef.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/18-47556e46e46a8d77ce86.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/18-47556e46e46a8d77ce86.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-cfbdd600b6d6892cf24d.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19-cfbdd600b6d6892cf24d.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2-df4c8cb86cd3412f67f9.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2-df4c8cb86cd3412f67f9.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-98f78af7675bf09d69d1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20-98f78af7675bf09d69d1.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_headers" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-fedc935a13359d7cc6e8.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-fedc935a13359d7cc6e8.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---node-modules-gatsby-plugin-offline-app-shell-js-d714a190fcc64265ddc1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---node-modules-gatsby-plugin-offline-app-shell-js-d714a190fcc64265ddc1.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---src-pages-404-jsx-83fa99a79aaf2cb5b23c.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---src-pages-404-jsx-83fa99a79aaf2cb5b23c.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---src-pages-blog-jsx-3d011bacc30afba41bcf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---src-pages-blog-jsx-3d011bacc30afba41bcf.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---src-pages-categories-jsx-41ec3b7ba354d4bce04e.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---src-pages-categories-jsx-41ec3b7ba354d4bce04e.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---src-pages-datenschutz-jsx-4b9612947bd097bfa6d1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---src-pages-datenschutz-jsx-4b9612947bd097bfa6d1.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---src-pages-impressum-jsx-b56b1848f5c6bdfd0ab9.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---src-pages-impressum-jsx-b56b1848f5c6bdfd0ab9.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---src-pages-index-jsx-85c53e63b49971feec57.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---src-pages-index-jsx-85c53e63b49971feec57.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---src-pages-kontakt-jsx-74ed0679ec88755f8665.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---src-pages-kontakt-jsx-74ed0679ec88755f8665.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---src-pages-projekte-jsx-6b430d50efc20cdc3a13.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---src-pages-projekte-jsx-6b430d50efc20cdc3a13.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---src-pages-tags-jsx-074768aae7ebacbd9ec1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---src-pages-tags-jsx-074768aae7ebacbd9ec1.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---src-templates-category-jsx-3e401951312f40541798.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---src-templates-category-jsx-3e401951312f40541798.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---src-templates-post-jsx-66b8212c7b4ba1403a8c.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---src-templates-post-jsx-66b8212c7b4ba1403a8c.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---src-templates-project-jsx-24fbe826e067d5f48e83.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---src-templates-project-jsx-24fbe826e067d5f48e83.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---src-templates-tag-jsx-0c2a5a5f4142952715e5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/component---src-templates-tag-jsx-0c2a5a5f4142952715e5.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manifest.webmanifest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sitemap.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sw.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-runtime-efcaa34d6355b8a2bc0e.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-runtime-efcaa34d6355b8a2bc0e.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.stats.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/browserconfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/browserconfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/google8458f22e0e6754c4.html" beforeDir="false" afterPath="$PROJECT_DIR$/google8458f22e0e6754c4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinterest-dcb73.html" beforeDir="false" afterPath="$PROJECT_DIR$/pinterest-dcb73.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/robots.txt" afterDir="false" />
-    </list>
+    <list default="true" id="28857e16-9aec-4c74-9ed6-5f6e4e2ab0fd" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -79,18 +16,29 @@
         <entry file="file://$PROJECT_DIR$/browserconfig.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
-            </state>
-          </provider>
+      <file leaf-file-name="google8458f22e0e6754c4.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/google8458f22e0e6754c4.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="robots.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/robots.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="pinterest-dcb73.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pinterest-dcb73.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="component---node-modules-gatsby-plugin-offline-app-shell-js-d714a190fcc64265ddc1.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/component---node-modules-gatsby-plugin-offline-app-shell-js-d714a190fcc64265ddc1.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -155,6 +103,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="SearchEverywhereHistoryKey" value="switch&#9;ACTION&#9;QuickChangeScheme" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -247,7 +196,7 @@
       <workItem from="1531809441702" duration="656000" />
       <workItem from="1531811451161" duration="2468000" />
       <workItem from="1531813959555" duration="2420000" />
-      <workItem from="1531884483534" duration="3827000" />
+      <workItem from="1531884483534" duration="4754000" />
     </task>
     <task id="LOCAL-00001" summary="Update codes.">
       <created>1531887598647</created>
@@ -260,7 +209,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9679000" />
+    <option name="totallyTimeSpent" value="10606000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="1080" width="1920" height="1080" extended-state="0" />
@@ -276,9 +225,9 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32935324" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32935324" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.37711442" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.37711442" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973376" />
@@ -342,13 +291,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -418,19 +360,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/browserconfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
+        <state relative-caret-position="1020">
           <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component---node-modules-gatsby-plugin-offline-app-shell-js-d714a190fcc64265ddc1.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/browserconfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robots.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinterest-dcb73.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/google8458f22e0e6754c4.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
