@@ -1,0 +1,27 @@
+{
+  "name": "leon-lee-blog",
+  "version": "1.0.0",
+  "description": "Personal Blog Website",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "deploy": "git merge --no-ff -s recursive -X subtree=public develop && git push --set-upstream origin master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leon-lee-jl/blog"
+  },
+  "keywords": [
+    "React",
+    "Blog",
+    "Leon",
+    "Lee"
+  ],
+  "author": "Leon Lee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leon-lee-jl/blog/issues"
+  },
+  "homepage": "https://github.com/leon-lee-jl/blog#readme"
+}
