@@ -1,6 +1,6 @@
 const config = require('./config/website');
 
-const pathPrefix = config.pathPrefix === '/~leon.lee/blog' ? '' : config.pathPrefix;
+const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix;
 
 module.exports = {
   /* General Information */
