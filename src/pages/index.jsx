@@ -55,10 +55,9 @@ const Index = ({
     />
      <Container>
         <Text>
-            Ich entwerfe, gestalte und entwickle plattformübergreifende Design-Konzepte, um das volle Potential aus deiner
-            Marke herauszuholen. <br />
+            To me, mathematics, computer science, and the arts are insanely related. They're all creative expressions. <br />
             <Link to="/projekte">
-                <Button type="primary">Blogs</Button>
+                <Button type="primary">Have Fun</Button>
             </Link>
         </Text>
     </Container>

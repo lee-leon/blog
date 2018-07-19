@@ -48,7 +48,7 @@ const Nav = styled.nav`
 const Navigation = () => (
   <Headroom calcHeightOnResize disableInlineStyles>
     <StyledLink to="/">
-      <Logo />
+      {/*<Logo />*/}
       <LogoText>Leon Lee</LogoText>
     </StyledLink>
     <Nav>
