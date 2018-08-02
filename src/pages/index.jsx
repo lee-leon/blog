@@ -11,7 +11,7 @@ import FeaturedPost from '../components/FeaturedPost';
 import Header from '../components/Header';
 import Button from '../components/Button';
 
-const ProjectsWrapper = styled.div`
+const HCIWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -40,7 +40,7 @@ const Text = styled.p`
 
 const Index = ({
   data: {
-    projects: { edges: projectEdges },
+    hcis: { edges: hciEdges },
     posts: { edges: postEdges },
   },
 }) => (
@@ -49,53 +49,53 @@ const Index = ({
       big
       title={
         <React.Fragment>
-          Technologies <br /> <br />On the way
+          Technologies <br /> <br />
+          On the way
         </React.Fragment>
       }
     />
-     <Container>
-        <Text>
-            To me, mathematics, computer science, and the arts are insanely related. They're all creative expressions. <br />
-            <Link to="/projekte">
-                <Button type="primary">Have Fun</Button>
-            </Link>
-        </Text>
+    <Container>
+      <Text>
+        To me, mathematics, computer science, and the arts are insanely related. They're all creative expressions.{' '}
+        <br />
+        <Link to="/hci">
+          <Button type="primary">HCI</Button>
+        </Link>
+      </Text>
     </Container>
     <Container type="big">
-      <ProjectsWrapper>
-        {projectEdges.map(project => (
+      <HCIWrapper>
+        {hciEdges.map(hci => (
           <FeaturedProject
-            key={project.node.frontmatter.title}
-            cover={project.node.frontmatter.cover.childImageSharp.fluid}
-            customer={project.node.frontmatter.customer}
-            path={project.node.fields.slug}
-            title={project.node.frontmatter.title}
+            key={hci.node.frontmatter.title}
+            cover={hci.node.frontmatter.cover.childImageSharp.fluid}
+            customer={hci.node.frontmatter.customer}
+            path={hci.node.fields.slug}
+            title={hci.node.frontmatter.title}
           />
         ))}
-      </ProjectsWrapper>
+      </HCIWrapper>
     </Container>
 
-    {/*<Container>*/}
-        {/*<Text>*/}
-            {/*Mit ebenso viel Leidenschaft schreibe ich über Design- und Coding-Themen und gebe mein Wissen in Form von*/}
-            {/*Tutorials weiter. <br />*/}
-            {/*<Link to="/blog">*/}
-                {/*<Button type="secondary">Blog</Button>*/}
-            {/*</Link>*/}
-        {/*</Text>*/}
-      {/*<PostsWrapper>*/}
-        {/*{postEdges.map(post => (*/}
-          {/*<FeaturedPost*/}
-            {/*key={post.node.frontmatter.title}*/}
-            {/*cover={post.node.frontmatter.cover.childImageSharp.fluid}*/}
-            {/*date={post.node.frontmatter.date}*/}
-            {/*path={post.node.fields.slug}*/}
-            {/*title={post.node.frontmatter.title}*/}
-            {/*category={post.node.frontmatter.category}*/}
-          {/*/>*/}
-        {/*))}*/}
-      {/*</PostsWrapper>*/}
-    {/*</Container>*/}
+    <Container>
+      <Text>
+        <Link to="/blog">
+          <Button type="secondary">Algorithms</Button>
+        </Link>
+      </Text>
+      <PostsWrapper>
+        {postEdges.map(post => (
+          <FeaturedPost
+            key={post.node.frontmatter.title}
+            cover={post.node.frontmatter.cover.childImageSharp.fluid}
+            date={post.node.frontmatter.date}
+            path={post.node.fields.slug}
+            title={post.node.frontmatter.title}
+            category={post.node.frontmatter.category}
+          />
+        ))}
+      </PostsWrapper>
+    </Container>
     <Footer />
   </Layout>
 );
@@ -104,7 +104,7 @@ export default Index;
 
 Index.propTypes = {
   data: PropTypes.shape({
-    projects: PropTypes.shape({
+    hcis: PropTypes.shape({
       edges: PropTypes.array.isRequired,
     }),
     posts: PropTypes.shape({
@@ -115,10 +115,10 @@ Index.propTypes = {
 
 export const pageQuery = graphql`
   query IndexQuery {
-    projects: allMarkdownRemark(
+    hcis: allMarkdownRemark(
       limit: 3
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { fields: { sourceInstanceName: { eq: "projekte" } } }
+      filter: { fields: { sourceInstanceName: { eq: "hci" } } }
     ) {
       edges {
         node {

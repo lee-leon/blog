@@ -3,7 +3,8 @@ const _ = require('lodash');
 
 const pathPrefixes = {
   blog: '/blog',
-  projekte: '/projekte',
+  hci: '/hci',
+  system: '/system',
 };
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
@@ -40,7 +41,8 @@ exports.createPages = ({ graphql, actions }) => {
 
   return new Promise((resolve, reject) => {
     const postPage = path.resolve('src/templates/post.jsx');
-    const projectPage = path.resolve('src/templates/project.jsx');
+    const systemPage = path.resolve('src/templates/system.jsx');
+    const hciPage = path.resolve('src/templates/project.jsx');
     const tagPage = path.resolve('src/templates/tag.jsx');
     const categoryPage = path.resolve('src/templates/category.jsx');
     resolve(
@@ -70,8 +72,32 @@ exports.createPages = ({ graphql, actions }) => {
               }
             }
           }
-          projects: allMarkdownRemark(
-            filter: { fields: { sourceInstanceName: { eq: "projekte" } } }
+          systems: allMarkdownRemark(
+            filter: { fields: { sourceInstanceName: { eq: "system" } } }
+            sort: { fields: [frontmatter___date], order: DESC }
+          ) {
+            edges {
+              node {
+                frontmatter {
+                  tags
+                  category
+                  title
+                  cover {
+                    childImageSharp {
+                      resize(width: 600) {
+                        src
+                      }
+                    }
+                  }
+                }
+                fields {
+                  slug
+                }
+              }
+            }
+          }
+          hcis: allMarkdownRemark(
+            filter: { fields: { sourceInstanceName: { eq: "hci" } } }
             sort: { fields: [frontmatter___date], order: DESC }
           ) {
             edges {
@@ -101,9 +127,9 @@ exports.createPages = ({ graphql, actions }) => {
 
         const tagSet = new Set();
         const categorySet = new Set();
-
         const postsList = result.data.posts.edges;
-        const projectsList = result.data.projects.edges;
+        const systemsList = result.data.systems.edges;
+        const hcisList = result.data.hcis.edges;
 
         postsList.forEach(post => {
           if (post.node.frontmatter.tags) {
@@ -132,17 +158,44 @@ exports.createPages = ({ graphql, actions }) => {
           });
         });
 
-        projectsList.forEach(project => {
-          const filtered = _.filter(projectsList, input => input.node.fields.slug !== project.node.fields.slug);
+        systemsList.forEach(system => {
+          if (system.node.frontmatter.tags) {
+            system.node.frontmatter.tags.forEach(tag => {
+              tagSet.add(tag);
+            });
+          }
+
+          if (system.node.frontmatter.category) {
+            categorySet.add(system.node.frontmatter.category);
+          }
+
+          const filtered = _.filter(systemsList, input => input.node.fields.slug !== system.node.fields.slug);
           const sample = _.sampleSize(filtered, 2);
           const left = sample[0].node;
           const right = sample[1].node;
 
           createPage({
-            path: project.node.fields.slug,
-            component: projectPage,
+            path: system.node.fields.slug,
+            component: systemPage,
             context: {
-              slug: project.node.fields.slug,
+              slug: system.node.fields.slug,
+              left,
+              right,
+            },
+          });
+        });
+
+        hcisList.forEach(hci => {
+          const filtered = _.filter(hcisList, input => input.node.fields.slug !== hci.node.fields.slug);
+          const sample = _.sampleSize(filtered, 2);
+          const left = sample[0].node;
+          const right = sample[1].node;
+
+          createPage({
+            path: hci.node.fields.slug,
+            component: hciPage,
+            context: {
+              slug: hci.node.fields.slug,
               left,
               right,
             },

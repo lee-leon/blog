@@ -22,8 +22,15 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'projekte',
-        path: `${__dirname}/content/${config.projectPostDir}`,
+        name: 'system',
+        path: `${__dirname}/content/${config.systemPostDir}`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'hci',
+        path: `${__dirname}/content/${config.hciPostDir}`,
       },
     },
     'gatsby-transformer-sharp',
