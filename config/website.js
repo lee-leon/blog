@@ -1,6 +1,6 @@
 module.exports = {
   // Basics
-  blogPostDir: 'blog',
+  algorithmPostDir: 'blog',
   systemPostDir: 'system',
   hciPostDir: 'hci',
   // Meta Data

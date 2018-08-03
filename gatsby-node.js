@@ -2,7 +2,7 @@ const path = require('path');
 const _ = require('lodash');
 
 const pathPrefixes = {
-  blog: '/blog',
+  algorithm: '/algorithm',
   hci: '/hci',
   system: '/system',
 };
@@ -40,16 +40,16 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
   return new Promise((resolve, reject) => {
-    const postPage = path.resolve('src/templates/post.jsx');
+    const algorithmPage = path.resolve('src/templates/algorithm.jsx');
     const systemPage = path.resolve('src/templates/system.jsx');
-    const hciPage = path.resolve('src/templates/project.jsx');
+    const hciPage = path.resolve('src/templates/hci.jsx');
     const tagPage = path.resolve('src/templates/tag.jsx');
     const categoryPage = path.resolve('src/templates/category.jsx');
     resolve(
       graphql(`
         {
-          posts: allMarkdownRemark(
-            filter: { fields: { sourceInstanceName: { eq: "blog" } } }
+          algorithms: allMarkdownRemark(
+            filter: { fields: { sourceInstanceName: { eq: "algorithm" } } }
             sort: { fields: [frontmatter___date], order: DESC }
           ) {
             edges {
@@ -124,40 +124,39 @@ exports.createPages = ({ graphql, actions }) => {
           console.log(result.errors);
           reject(result.errors);
         }
-
         const tagSet = new Set();
         const categorySet = new Set();
-        const postsList = result.data.posts.edges;
+        const algorithmsList = result.data.algorithms.edges;
         const systemsList = result.data.systems.edges;
         const hcisList = result.data.hcis.edges;
 
-        postsList.forEach(post => {
-          if (post.node.frontmatter.tags) {
-            post.node.frontmatter.tags.forEach(tag => {
+        console.log(result);
+        algorithmsList.forEach(algorithm => {
+          if (algorithm.node.frontmatter.tags) {
+            algorithm.node.frontmatter.tags.forEach(tag => {
               tagSet.add(tag);
             });
           }
 
-          if (post.node.frontmatter.category) {
-            categorySet.add(post.node.frontmatter.category);
+          if (algorithm.node.frontmatter.category) {
+            categorySet.add(algorithm.node.frontmatter.category);
           }
 
-          const filtered = _.filter(postsList, input => input.node.fields.slug !== post.node.fields.slug);
+          const filtered = _.filter(algorithmsList, input => input.node.fields.slug !== algorithm.node.fields.slug);
           const sample = _.sampleSize(filtered, 2);
           const left = sample[0].node;
           const right = sample[1].node;
 
           createPage({
-            path: post.node.fields.slug,
-            component: postPage,
+            path: algorithm.node.fields.slug,
+            component: algorithmPage,
             context: {
-              slug: post.node.fields.slug,
+              slug: algorithm.node.fields.slug,
               left,
               right,
             },
           });
         });
-
         systemsList.forEach(system => {
           if (system.node.frontmatter.tags) {
             system.node.frontmatter.tags.forEach(tag => {
@@ -184,7 +183,6 @@ exports.createPages = ({ graphql, actions }) => {
             },
           });
         });
-
         hcisList.forEach(hci => {
           const filtered = _.filter(hcisList, input => input.node.fields.slug !== hci.node.fields.slug);
           const sample = _.sampleSize(filtered, 2);

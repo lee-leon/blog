@@ -16,27 +16,27 @@ const Base = styled.div`
   flex-direction: column;
 `;
 
-const Blog = ({
+const Algorithm = ({
   data: {
     allMarkdownRemark: { edges },
   },
 }) => (
   <Layout>
-    <Helmet title={`Blog | ${config.siteTitle}`} />
-    <Header title="Blog">Ein bunter Mix aus Überlegungen, Tutorials und Neuigkeiten</Header>
+    <Helmet title={`Algorithm | ${config.siteTitle}`} />
+    <Header title="Advanced Data Structure & Algorithms" />
     <Container type="big">
       <Base>
-        {edges.map(post => (
+        {edges.map(algorithm => (
           <ItemBlog
-            key={post.node.frontmatter.title}
-            path={post.node.fields.slug}
-            cover={post.node.frontmatter.cover.childImageSharp.fluid}
-            title={post.node.frontmatter.title}
-            date={post.node.frontmatter.date}
-            category={post.node.frontmatter.category}
-            timeToRead={post.node.timeToRead}
-            excerpt={post.node.excerpt}
-            tags={post.node.frontmatter.tags}
+            key={algorithm.node.frontmatter.title}
+            path={algorithm.node.fields.slug}
+            cover={algorithm.node.frontmatter.cover.childImageSharp.fluid}
+            title={algorithm.node.frontmatter.title}
+            date={algorithm.node.frontmatter.date}
+            category={algorithm.node.frontmatter.category}
+            timeToRead={algorithm.node.timeToRead}
+            excerpt={algorithm.node.excerpt}
+            tags={algorithm.node.frontmatter.tags}
           />
         ))}
       </Base>
@@ -45,9 +45,9 @@ const Blog = ({
   </Layout>
 );
 
-export default Blog;
+export default Algorithm;
 
-Blog.propTypes = {
+Algorithm.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array.isRequired,
@@ -56,11 +56,11 @@ Blog.propTypes = {
 };
 
 export const pageQuery = graphql`
-  query BlogQuery {
+  query AlgorithmQuery {
     allMarkdownRemark(
       limit: 1000
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { fields: { sourceInstanceName: { eq: "blog" } } }
+      filter: { fields: { sourceInstanceName: { eq: "algorithm" } } }
     ) {
       edges {
         node {

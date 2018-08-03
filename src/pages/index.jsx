@@ -41,7 +41,7 @@ const Text = styled.p`
 const Index = ({
   data: {
     hcis: { edges: hciEdges },
-    posts: { edges: postEdges },
+    algorithms: { edges: algorithmEdges },
   },
 }) => (
   <Layout>
@@ -79,23 +79,24 @@ const Index = ({
 
     <Container>
       <Text>
-        <Link to="/blog">
+        <Link to="/algorithm">
           <Button type="secondary">Algorithms</Button>
         </Link>
       </Text>
       <PostsWrapper>
-        {postEdges.map(post => (
+        {algorithmEdges.map(algorithm => (
           <FeaturedPost
-            key={post.node.frontmatter.title}
-            cover={post.node.frontmatter.cover.childImageSharp.fluid}
-            date={post.node.frontmatter.date}
-            path={post.node.fields.slug}
-            title={post.node.frontmatter.title}
-            category={post.node.frontmatter.category}
+            key={algorithm.node.frontmatter.title}
+            cover={algorithm.node.frontmatter.cover.childImageSharp.fluid}
+            date={algorithm.node.frontmatter.date}
+            path={algorithm.node.fields.slug}
+            title={algorithm.node.frontmatter.title}
+            category={algorithm.node.frontmatter.category}
           />
         ))}
       </PostsWrapper>
     </Container>
+
     <Footer />
   </Layout>
 );
@@ -107,7 +108,7 @@ Index.propTypes = {
     hcis: PropTypes.shape({
       edges: PropTypes.array.isRequired,
     }),
-    posts: PropTypes.shape({
+    algorithms: PropTypes.shape({
       edges: PropTypes.array.isRequired,
     }),
   }).isRequired,
@@ -139,10 +140,10 @@ export const pageQuery = graphql`
         }
       }
     }
-    posts: allMarkdownRemark(
+    algorithms: allMarkdownRemark(
       limit: 2
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { fields: { sourceInstanceName: { eq: "blog" } } }
+      filter: { fields: { sourceInstanceName: { eq: "algorithm" } } }
     ) {
       edges {
         node {

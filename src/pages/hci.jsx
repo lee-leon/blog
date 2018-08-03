@@ -23,9 +23,7 @@ const Hci = ({
 }) => (
   <Layout>
     <Helmet title={`HCI | ${config.siteTitle}`} />
-    <Header title="Next Generation HCI">
-
-    </Header>
+    <Header title="Next Generation HCI" />
     <Container type="big">
       <Base>
         {edges.map(hci => (
