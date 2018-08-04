@@ -141,7 +141,7 @@ export const pageQuery = graphql`
       }
     }
     algorithms: allMarkdownRemark(
-      limit: 2
+      limit: 4
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { fields: { sourceInstanceName: { eq: "algorithm" } } }
     ) {
