@@ -42,9 +42,9 @@ const Categories = ({
   },
 }) => (
   <Layout>
-    <Helmet title={`Kategorien | ${config.siteTitle}`} />
-    <Header title="Kategorien">
-      {size(edges)} Beiträge wurden in {size(group)} Kategorien eingeteilt
+    <Helmet title={`Categories | ${config.siteTitle}`} />
+    <Header title="Categories">
+      {size(edges)} Blogs in {size(group)} Categories
     </Header>
     <Container>
       <TagsContainer>
@@ -74,7 +74,7 @@ Categories.propTypes = {
 
 export const pageQuery = graphql`
   query CategoriesPage {
-    allMarkdownRemark(filter: { fields: { sourceInstanceName: { eq: "blog" } } }) {
+    allMarkdownRemark(filter: { fields: { sourceInstanceName: { eq: "algorithm" } } }) {
       group(field: frontmatter___category) {
         fieldValue
         totalCount

@@ -22,10 +22,9 @@ const Category = ({
   <Layout>
     <Helmet title={`${category} | ${config.siteTitle}`} />
     <Header title={category}>
-      {totalCount} {totalCount === 1 ? 'Beitrag' : 'Beiträge'} {totalCount === 1 ? 'gehört' : 'gehören'} der Kategorie "{
-        category
-      }" an <br />
-      <StyledLink to="/categories">Alle Kategorien</StyledLink>
+      {totalCount} {totalCount === 1 ? 'Beitrag' : 'Beiträge'} {totalCount === 1 ? 'gehört' : 'gehören'} der Kategorie "
+      {category}" an <br />
+      <StyledLink to="/categories">All Categories</StyledLink>
     </Header>
     <Container>
       {edges.map(edge => (

@@ -74,7 +74,7 @@ Tags.propTypes = {
 
 export const pageQuery = graphql`
   query TagsPage {
-    allMarkdownRemark(filter: { fields: { sourceInstanceName: { eq: "blog" } } }) {
+    allMarkdownRemark(filter: { fields: { sourceInstanceName: { eq: "algorithm" } } }) {
       group(field: frontmatter___tags) {
         fieldValue
         totalCount

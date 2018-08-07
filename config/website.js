@@ -11,8 +11,7 @@ module.exports = {
   siteBanner: '/social/banner.jpg',
   siteUrl: 'http://blog.leonlee.live',
   pathPrefix: '/',
-  siteDescription:
-    'Personal website of Leon Lee',
+  siteDescription: 'Personal website of Leon Lee',
   // IDs
   googleAnalyticsID: 'UA-118983974-1',
   twitter: '#',

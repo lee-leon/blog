@@ -130,7 +130,6 @@ exports.createPages = ({ graphql, actions }) => {
         const systemsList = result.data.systems.edges;
         const hcisList = result.data.hcis.edges;
 
-        console.log(result);
         algorithmsList.forEach(algorithm => {
           if (algorithm.node.frontmatter.tags) {
             algorithm.node.frontmatter.tags.forEach(tag => {
