@@ -19,13 +19,22 @@ const HCIWrapper = styled.div`
   margin-top: -2rem;
 `;
 
-const PostsWrapper = styled.div`
+const SystemWrapper = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 1rem;
 `;
+
+const AlgorithmWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1rem;
+`;
+
 
 const Text = styled.p`
   text-align: center;
@@ -42,6 +51,7 @@ const Index = ({
   data: {
     hcis: { edges: hciEdges },
     algorithms: { edges: algorithmEdges },
+    systems: { edges: systemEdges },
   },
 }) => (
   <Layout>
@@ -56,10 +66,31 @@ const Index = ({
     />
     <Container>
       <Text>
-        To me, mathematics, computer science, and the arts are insanely related. They're all creative expressions.{' '}
+        To me, mathematics, computer science, and the arts are insanely related. They're all creative expressions.
+        <Link to="/system">
+          <Button type="secondary">System Design</Button>
+          <br/>
+        </Link>
+      </Text>
+      <SystemWrapper>
+        {systemEdges.map(system => (
+          <FeaturedPost
+            key={system.node.frontmatter.title}
+            cover={system.node.frontmatter.cover.childImageSharp.fluid}
+            date={system.node.frontmatter.date}
+            path={system.node.fields.slug}
+            title={system.node.frontmatter.title}
+            category={system.node.frontmatter.category}
+          />
+        ))}
+      </SystemWrapper>
+    </Container>
+    <Container>
+      <Text>
         <br />
         <Link to="/hci">
           <Button type="primary">HCI</Button>
+          <br/>
         </Link>
       </Text>
     </Container>
@@ -81,9 +112,10 @@ const Index = ({
       <Text>
         <Link to="/algorithm">
           <Button type="secondary">Algorithms</Button>
+          <br/>
         </Link>
       </Text>
-      <PostsWrapper>
+      <AlgorithmWrapper>
         {algorithmEdges.map(algorithm => (
           <FeaturedPost
             key={algorithm.node.frontmatter.title}
@@ -94,7 +126,7 @@ const Index = ({
             category={algorithm.node.frontmatter.category}
           />
         ))}
-      </PostsWrapper>
+      </AlgorithmWrapper>
     </Container>
 
     <Footer />
@@ -109,6 +141,9 @@ Index.propTypes = {
       edges: PropTypes.array.isRequired,
     }),
     algorithms: PropTypes.shape({
+      edges: PropTypes.array.isRequired,
+    }),
+    systems: PropTypes.shape({
       edges: PropTypes.array.isRequired,
     }),
   }).isRequired,
@@ -144,6 +179,31 @@ export const pageQuery = graphql`
       limit: 2
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { fields: { sourceInstanceName: { eq: "algorithm" } } }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            cover {
+              childImageSharp {
+                fluid(maxWidth: 800, quality: 90, traceSVG: { color: "#2B2B2F" }) {
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                }
+              }
+            }
+            date(formatString: "DD.MM.YYYY")
+            category
+          }
+        }
+      }
+    }
+    systems: allMarkdownRemark(
+      limit: 2
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { fields: { sourceInstanceName: { eq: "system" } } }
     ) {
       edges {
         node {
