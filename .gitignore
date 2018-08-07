@@ -1,2 +1,5 @@
 .idea/*.xml
 *.iml
+.cache/
+.idea/*
+node_modules/
