@@ -13,7 +13,7 @@ module.exports = {
   pathPrefix: '/',
   siteDescription: 'Personal website of Leon Lee',
   // IDs
-  googleAnalyticsID: 'UA-118983974-1',
+  googleAnalyticsID: 'UA-118983974-3',
   twitter: '#',
   facebook: '#',
   // Manifest
