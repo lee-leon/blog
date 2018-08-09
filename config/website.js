@@ -1,6 +1,6 @@
 module.exports = {
   // Basics
-  algorithmPostDir: 'blog',
+  algorithmPostDir: 'algorithm',
   systemPostDir: 'system',
   hciPostDir: 'hci',
   // Meta Data
@@ -17,6 +17,6 @@ module.exports = {
   twitter: '#',
   facebook: '#',
   // Manifest
-  themeColor: '#3498DB',
+  themeColor: '#66dbb8',
   backgroundColor: '#2e3246',
 };

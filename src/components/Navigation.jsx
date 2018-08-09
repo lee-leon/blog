@@ -48,13 +48,11 @@ const Nav = styled.nav`
 const Navigation = () => (
   <Headroom calcHeightOnResize disableInlineStyles>
     <StyledLink to="/">
-      {/*<Logo />*/}
+      <Logo />
       <LogoText>Leon Lee</LogoText>
     </StyledLink>
     <Nav>
-      <Link to="portfolio">Portfolio</Link>
-      <Link to="/blog">Blog</Link>
-      {/*<Link to="/kontakt">Kontakt</Link>*/}
+      <LogoText><a href="https://leonlee.live"><b>PORTFOLIO</b></a></LogoText>
     </Nav>
   </Headroom>
 );

@@ -24,8 +24,8 @@ const colors = {
     dark: '#d17c26',
   },
   background: {
-    light: '#46507a',
-    dark: '#262c41',
+    light: '#333856',
+    dark: '#2e3450',
   },
   brands: {
     discord: '#7289da',
