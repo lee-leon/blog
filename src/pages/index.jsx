@@ -62,7 +62,7 @@ const Index = ({
             To me, <br /> <br />
             Mathematics, Computer Science, and Arts are insanely related. <br /> <br />
             They're all creative expressions.
-            <br /> <br />
+            <br />
         </React.Fragment>
       }
     />

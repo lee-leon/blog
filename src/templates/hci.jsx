@@ -96,15 +96,15 @@ const Hci = ({ pageContext: { slug, left, right }, data: { markdownRemark: postN
       <Container>
         <CardWrapper>
           <Card>
-            <h2>Kunde</h2>
+            <h2>Objective</h2>
             {post.customer}
           </Card>
           <Card>
-            <h2>Aufgabe</h2>
+            <h2>Task</h2>
             {post.task}
           </Card>
           <Card>
-            <h2>Zeitraum</h2>
+            <h2>Time</h2>
             {post.time}
           </Card>
         </CardWrapper>
@@ -114,14 +114,10 @@ const Hci = ({ pageContext: { slug, left, right }, data: { markdownRemark: postN
       </Container>
       <Container>
         <Line aria-hidden="true" />
-        <InfoText>Weitere Projekte</InfoText>
+        <InfoText>Related Reading</InfoText>
         <Suggestions left={left} right={right} />
       </Container>
       <Footer>
-        <h1>Packen wir's an!</h1>
-        <Link to="/kontakt">
-          <Button type="primary">Projekt starten</Button>
-        </Link>
       </Footer>
     </Layout>
   );
@@ -144,7 +140,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "DD.MM.YYYY")
+        date(formatString: "MMMM DD, YYYY")
         customer
         task
         time

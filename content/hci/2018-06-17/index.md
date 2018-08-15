@@ -1,8 +1,8 @@
 ---
 customer: ""
-title: "Advanced Data Structure & Algorithms"
-cover: "./data_structure_and_algorithms.png"
+title: "Kinect V2 Exploration"
+cover: "./kinect_v2_exploration.png"
 date: "2018-06-17"
-task: ""
-time: ""
+task: "XXXX"
+time: "XXXX"
 ---

@@ -1,8 +1,8 @@
 ---
 customer: ""
-title: "Distributed System Design Prime"
-cover: "./system_design.jpg"
+title: "Voice Assistant"
+cover: "./voice_assistant.jpg"
 date: "2018-06-18"
-task: ""
-time: ""
+task: "XXXX"
+time: "XXXX"
 ---
