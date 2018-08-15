@@ -7,95 +7,95 @@
 /static/*
   Cache-Control: max-age=31536000
 /offline-plugin-app-shell-fallback/
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </component---node-modules-gatsby-plugin-offline-app-shell-js-cf37a50d5d69f72874c4.js>; rel=preload; as=script
 /algorithm/language-model
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
 /algorithm/logistic-regression
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
 /algorithm/linear-regression
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
 /system/redis-analysis
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
 /system/auto-complete-design
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
 /system/spark-elastic-search
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
-/hci/-distributed-system-design-prime
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+/hci/-voice-assistant
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
-/hci/-advanced-data-structure-algorithms
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+/hci/-kinect-v-2-exploration
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
-/hci/-human-computer-interactions
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+/hci/-ar-kit-exploration
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
 /tags/statistic-model/
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
 /tags/neural-network/
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
 /tags/ml/
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
 /tags/supervised-learning/
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
 /tags/trie/
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
 /tags/spark/
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
 /tags/elastic-search/
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
 /categories/natural-language-processing/
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
 /categories/machine-learning/
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
 /categories/system-design/
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
 /404/
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
 /algorithm/
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
 /categories/
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
 /datenschutz/
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
 /hci/
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
 /impressum/
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
 /
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
 /kontakt/
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
 /system/
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
 /tags/
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
 /404.html
-  Link: </webpack-runtime-c45a701bb157ee31d58e.js>; rel=preload; as=script
+  Link: </webpack-runtime-d24595ae452ac7045b7b.js>; rel=preload; as=script
   Link: </0.7b7ae15674d8d342cda6.css>; rel=preload; as=script
