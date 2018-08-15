@@ -96,8 +96,8 @@ const ItemBlog = ({ path, cover, category, title, date, timeToRead, excerpt }) =
         <h1>{title}</h1>
       </Link>
       <Statistics>
-        {date} &mdash; Lesezeit: {timeToRead} Min. &mdash; <span className={hideS}>Kategorie: </span>
-        <Link to={`/categories/${kebabCase(category)}`}>{category}</Link>
+        <span className={hideS}>Category: </span>
+        <Link to={`/categories/${kebabCase(category)}`}>{category}</Link> &mdash; {timeToRead} Minutes Read &mdash; {date}
       </Statistics>
       <Excerpt>{excerpt}</Excerpt>
     </Information>

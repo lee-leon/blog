@@ -8,7 +8,6 @@ import { SEO, Container, Content, Wave, Line, Layout } from 'elements';
 import { hideS, Hero, InfoText } from 'utilities';
 import Tags from '../components/Tags';
 import Suggestions from '../components/Suggestions';
-import Button from '../components/Button';
 import Footer from '../components/Footer';
 
 const pulse = keyframes`
@@ -93,8 +92,9 @@ const Algorithm = ({ pageContext: { slug, left, right }, data: { markdownRemark:
         <Hero>
           <h1>{post.title}</h1>
           <Information>
-            {post.date} &mdash; Lesezeit: {postNode.timeToRead} Min. &mdash; <span className={hideS}>Kategorie: </span>
+            <span className={hideS}>Category:
             <Link to={`/categories/${kebabCase(post.category)}`}>{post.category}</Link>
+            </span> &mdash; {postNode.timeToRead} Minutes Read &mdash; {post.date}
           </Information>
         </Hero>
         <Wave />
@@ -105,19 +105,15 @@ const Algorithm = ({ pageContext: { slug, left, right }, data: { markdownRemark:
         <Line aria-hidden="true" />
         <Tags tags={post.tags} />
         <Note>
-          <span className={fontBold}>Interesse geweckt?</span> Lies alle Beiträge in der Kategorie{' '}
+          Read all posts from this category{' '}
           <Link to={`/categories/${kebabCase(post.category)}`}>{post.category}</Link>
         </Note>
       </Container>
       <Container>
-        <InfoText>Weitere Blogeinträge</InfoText>
+        <InfoText>Related Reading</InfoText>
         <Suggestions left={left} right={right} secondary />
       </Container>
       <Footer>
-        <h2>Lust auf mehr Tutorials & Goodies? Werde ein Patron.</h2>
-        <a href="https://www.patreon.com/lekoarts" target="_blank" rel="noopener noreferrer">
-          <Button type="secondary">Patreon</Button>
-        </a>
       </Footer>
     </Layout>
   );
@@ -142,7 +138,7 @@ export const pageQuery = graphql`
       excerpt
       frontmatter {
         title
-        date(formatString: "DD. MMMM YYYY", locale: "de")
+        date(formatString: "MMMM DD, YYYY", locale: "en")
         category
         tags
         cover {

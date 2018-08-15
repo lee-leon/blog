@@ -73,7 +73,7 @@ export const pageQuery = graphql`
           timeToRead
           frontmatter {
             title
-            date(formatString: "DD. MMMM YYYY", locale: "de")
+            date(formatString: "MMMM DD, YYYY", locale: "en")
             category
             tags
             cover {

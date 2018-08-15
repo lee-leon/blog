@@ -59,14 +59,15 @@ const Index = ({
       big
       title={
         <React.Fragment>
-          Technologies <br /> <br />
-          On the way
+            To me, <br /> <br />
+            Mathematics, Computer Science, and Arts are insanely related. <br /> <br />
+            They're all creative expressions.
+            <br /> <br />
         </React.Fragment>
       }
     />
     <Container>
       <Text>
-        To me, mathematics, computer science, and the arts are insanely related. They're all creative expressions.
         <Link to="/system">
           <Button type="secondary">System Design</Button>
           <br/>

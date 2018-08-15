@@ -93,8 +93,8 @@ const System = ({ pageContext: { slug, left, right }, data: { markdownRemark: sy
         <Hero>
           <h1>{system.title}</h1>
           <Information>
-            {system.date} &mdash; Lesezeit: {systemNode.timeToRead} Min. &mdash; <span className={hideS}>Kategorie: </span>
-            <Link to={`/categories/${kebabCase(system.category)}`}>{system.category}</Link>
+            <span className={hideS}>Category: </span>
+            <Link to={`/categories/${kebabCase(system.category)}`}>{system.category}</Link> &mdash; {systemNode.timeToRead} Minutes Read &mdash;  {system.date}
           </Information>
         </Hero>
         <Wave />
@@ -105,19 +105,15 @@ const System = ({ pageContext: { slug, left, right }, data: { markdownRemark: sy
         <Line aria-hidden="true" />
         <Tags tags={system.tags} />
         <Note>
-          <span className={fontBold}>Interesse geweckt?</span> Lies alle Beiträge in der Kategorie{' '}
+            Read all posts from this category{' '}
           <Link to={`/categories/${kebabCase(system.category)}`}>{system.category}</Link>
         </Note>
       </Container>
       <Container>
-        <InfoText>Weitere Blogeinträge</InfoText>
+        <InfoText>Related Reading</InfoText>
         <Suggestions left={left} right={right} secondary />
       </Container>
       <Footer>
-        <h2>Lust auf mehr Tutorials & Goodies? Werde ein Patron.</h2>
-        <a href="https://www.patreon.com/lekoarts" target="_blank" rel="noopener noreferrer">
-          <Button type="secondary">Patreon</Button>
-        </a>
       </Footer>
     </Layout>
   );
@@ -142,7 +138,7 @@ export const pageQuery = graphql`
       excerpt
       frontmatter {
         title
-        date(formatString: "DD. MMMM YYYY", locale: "de")
+        date(formatString: "MMMM DD, YYYY", locale: "en")
         category
         tags
         cover {
