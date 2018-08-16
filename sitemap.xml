@@ -6,9 +6,9 @@
 <url> <loc>http://blog.leonlee.live/system/redis-analysis</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://blog.leonlee.live/system/auto-complete-design</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://blog.leonlee.live/system/spark-elastic-search</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://blog.leonlee.live/hci/-voice-assistant</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://blog.leonlee.live/hci/-kinect-v-2-exploration</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://blog.leonlee.live/hci/-ar-kit-exploration</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://blog.leonlee.live/hci/xxx-voice-assistant</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://blog.leonlee.live/hci/xxx-ar-kit-exploration</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://blog.leonlee.live/hci/xxxx-kinect-v-2-exploration</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://blog.leonlee.live/tags/statistic-model/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://blog.leonlee.live/tags/neural-network/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://blog.leonlee.live/tags/ml/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
