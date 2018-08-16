@@ -1,5 +1,5 @@
 ---
-customer: ""
+customer: "xxx"
 title: "Voice Assistant"
 cover: "./voice_assistant.jpg"
 date: "2018-06-18"

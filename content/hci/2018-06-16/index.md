@@ -1,5 +1,5 @@
 ---
-customer: ""
+customer: "xxx"
 title: "ARKit Exploration"
 cover: "./arkit_exploration.jpg"
 date: "2018-06-16"
