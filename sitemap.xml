@@ -13,6 +13,7 @@
 <url> <loc>http://blog.leonlee.live/tags/neural-network/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://blog.leonlee.live/tags/ml/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://blog.leonlee.live/tags/supervised-learning/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://blog.leonlee.live/tags/linear-model/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://blog.leonlee.live/tags/trie/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://blog.leonlee.live/tags/spark/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://blog.leonlee.live/tags/elastic-search/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
