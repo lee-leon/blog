@@ -12,13 +12,13 @@ Language Modeling is an important idea behind many Natural Language Processing t
 
 
 ## Language Model Categories
-Language models (LM) can be classiﬁed into two categories: count-based and continuous-space LM. 
+Language models (LM) can be classified into two categories: count-based and continuous-space LM. 
 
 ### Count Based LM
-The count based LM is based on the n-th order Markov assumption and 
+The count based LM is based on the n-th order **Markov Assumption** and 
 estimating n-gram probabilities via counting and subsequent smoothing. 
 
-> Markov Assumption: One can make predictions for the future of the 
+> **Markov Assumption**: One can make predictions for the future of the 
 process based solely on its present state just as well as one could knowing 
 the process’s full history, hence independently from such history.[1]
 
@@ -33,11 +33,37 @@ Probability of n-th word given previous n-1 words is,
 <img src="https://latex.codecogs.com/svg.latex?\inline&space;\LARGE&space;p(w_{n})&space;=&space;p(&space;w_{n}&space;|&space;w_{1},&space;w_{2},&space;w_{3},&space;...,&space;w_{n&space;-&space;1})" title="\LARGE p(w_{n}) = p( w_{n} | w_{1}, w_{2}, w_{3}, ..., w_{n - 1})" />
 </p>
 
+So, the probability of the sequence of word can be formalized as,
+<p align="center">
+<img src="https://latex.codecogs.com/svg.latex?\inline&space;\LARGE&space;p(W)&space;=&space;p(w_{1},&space;w_{2},&space;w_{3},&space;...,&space;w_{n})&space;=&space;\prod_{i&space;=&space;1}^{n}p(w_{i}|w_{1},&space;w_{2},...,w_{i&space;-&space;1})" title="\LARGE p(W) = p(w_{1}, w_{2}, w_{3}, ..., w_{n}) = \prod_{i = 1}^{n}p(w_{i}|w_{1}, w_{2},...,w_{i - 1})" />
+</p>
+
+- <mark>Data sparsity Issue</mark>. Zero probability to all of the 
+combination that 
+were 
+not encountered in the training corpus. 
+  * Solutions
+    - back-off
+      * XX  
+    - Smoothing
+      * y
+- <mark>Limited Practical Usability</mark>. The dimensionality is very 
+large since there is a huge number of different combinations of values of the input variables.
+- <mark>Not Linguistically informed.</mark> It replies on exact 
+pattern</mark>. I.E. string or word sequence matching, and 
+therefore are in no way linguistically informed.
+- <mark>Markov Assumption Issue.</mark> Dependency beyond the window 
+is ignored
+
+
+
+
+
 
 ### Continuous-Space LM
 
 #### Feed-Forward Neural Probabilistic Language Models (NPLMs)
-
+NPLMs is proposed to solve the problem of data sparsity. 
 
 ## Implementation
 

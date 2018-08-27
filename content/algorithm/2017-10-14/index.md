@@ -6,10 +6,12 @@ category: "Machine Learning"
 tags:
     - ML
     - "Supervised Learning"
+    - "Linear Model"
 ---
 
-I'm adding some content
-
+ Linear Regression is a linear approach to modelling the relationship between
+  a scalar response (or dependent variable) and one or more explanatory 
+  variables (or independent variables)[1]. The case of one explanatory variable is called simple linear regression. For more than one explanatory variable, the process is called multiple linear regression. This term is distinct from multivariate linear regression, where multiple correlated dependent variables are predicted, rather than a single scalar variable.
 
 ## Heading
 
@@ -17,8 +19,10 @@ I'm adding some content
 ls -al
 echo "Yes"
 ``` 
-hhhh
 
 
 ## Another Heading
 
+
+
+[1] https://en.wikipedia.org/wiki/Linear_regression
