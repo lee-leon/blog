@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Link } from 'gatsby';
-import Helmet from 'react-helmet';
+import { Helmet } from "react-helmet"
 import { Container, Layout } from 'elements';
 import config from '../../config/website';
 import Footer from '../components/Footer';

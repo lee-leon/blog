@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled, { keyframes, css } from 'react-emotion';
+import styled from '@emotion/styled';
+import { keyframes, css } from '@emotion/core';
 import Img from 'gatsby-image';
 import { Link, graphql } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';

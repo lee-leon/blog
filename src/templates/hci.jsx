@@ -3,7 +3,8 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled, { keyframes } from 'react-emotion';
+import styled from '@emotion/styled';
+import { keyframes} from '@emotion/core';
 import Img from 'gatsby-image';
 import { Link, graphql } from 'gatsby';
 import { SEO, Container, Content, Line, Wave, Layout } from 'elements';

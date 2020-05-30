@@ -3,7 +3,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
-import styled from 'react-emotion';
+import styled from '@emotion/styled'
 import { Container, Layout } from 'elements';
 import Footer from '../components/Footer';
 import FeaturedProject from '../components/FeaturedProject';

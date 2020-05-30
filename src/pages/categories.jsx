@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import styled from 'react-emotion';
+import styled from '@emotion/styled'
 import kebabCase from 'lodash/kebabCase';
 import size from 'lodash/size';
 import { darken } from 'polished';
-import Helmet from 'react-helmet';
+import { Helmet } from "react-helmet"
 import { Container, Layout } from 'elements';
 import config from '../../config/website';
 import Footer from '../components/Footer';
