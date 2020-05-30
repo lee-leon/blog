@@ -69,8 +69,9 @@
   "license": "MIT",
   "main": "test",
   "scripts": {
-    "dev": "rm -fr .cache && gatsby develop",
-    "build": "gatsby build",
+    "dev": "rm -fr .cache/ && gatsby develop",
+    "build": "rm -fr .cache/ && gatsby build",
+    "publish": "cd public/ && git add -A && git commit -m 'publish' && git push",
     "lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
     "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore"
   }
