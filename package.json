@@ -69,9 +69,10 @@
   "license": "MIT",
   "main": "test",
   "scripts": {
-    "dev": "rm -fr .cache/ && gatsby develop",
-    "build": "rm -fr .cache/ && gatsby build",
+    "develop": "rm -fr .cache/ && gatsby develop",
+    "deploy": "gatsby build --prefix-paths",
     "publish": "cd public/ && git add -A && git commit -m 'publish' && git push",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
     "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore"
   }
