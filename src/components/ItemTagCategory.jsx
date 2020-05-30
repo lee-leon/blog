@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
-import { hideS } from 'utilities';
+import { hideS } from '../utilities/hide';
 import Tags from './Tags';
 
 const Wrapper = styled.article`

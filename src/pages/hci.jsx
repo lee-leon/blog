@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import { Helmet } from "react-helmet"
 import styled from '@emotion/styled'
-import { Container, Layout } from 'elements';
+import { Container, Layout } from '../elements';
 import config from '../../config/website';
 import ItemProject from '../components/ItemProject';
 import Footer from '../components/Footer';

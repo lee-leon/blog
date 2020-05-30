@@ -70,7 +70,7 @@
   "main": "test",
   "scripts": {
     "develop": "rm -fr .cache/ && gatsby develop",
-    "deploy": "gatsby build --prefix-paths",
+    "deploy": "rm -fr .cache/ && rm -fr public/* && gatsby build --prefix-paths",
     "publish": "cd public/ && git add -A && git commit -m 'publish' && git push",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
