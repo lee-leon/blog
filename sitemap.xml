@@ -3,6 +3,7 @@
 <url> <loc>http://blog.leonlee.live/algorithm/language-model</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://blog.leonlee.live/algorithm/logistic-regression</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://blog.leonlee.live/algorithm/linear-regression</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://blog.leonlee.live/system/design-pattern</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://blog.leonlee.live/system/redis-analysis</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://blog.leonlee.live/system/auto-complete-design</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://blog.leonlee.live/system/spark-elastic-search</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -19,6 +20,7 @@
 <url> <loc>http://blog.leonlee.live/tags/elastic-search/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://blog.leonlee.live/categories/natural-language-processing/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://blog.leonlee.live/categories/machine-learning/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://blog.leonlee.live/categories/design-pattern/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://blog.leonlee.live/categories/system-design/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://blog.leonlee.live/algorithm/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://blog.leonlee.live/categories/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
