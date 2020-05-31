@@ -7,7 +7,8 @@ import { ThemeProvider } from 'emotion-theming';
 import 'typeface-montserrat';
 import 'typeface-istok-web';
 import { reset, headroom } from 'styles';
-import { SEO } from 'elements';
+// eslint-disable-next-line import/no-cycle
+import { SEO } from '.';
 import Navigation from '../components/Navigation';
 import theme from '../../config/theme';
 
@@ -28,11 +29,11 @@ injectGlobal`
 
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
-    <React.Fragment>
+    <>
       <SEO />
       <Navigation />
       {children}
-    </React.Fragment>
+    </>
   </ThemeProvider>
 );
 

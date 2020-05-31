@@ -5,8 +5,8 @@ import { keyframes, css } from '@emotion/core';
 import Img from 'gatsby-image';
 import { Link, graphql } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
-import { SEO, Container, Content, Wave, Line, Layout } from 'elements';
-import { hideS, Hero, InfoText } from 'utilities';
+import { SEO, Container, Content, Wave, Line, Layout } from '../elements';
+import { hideS, Hero, InfoText } from '../utilities';
 import Tags from '../components/Tags';
 import Suggestions from '../components/Suggestions';
 import Footer from '../components/Footer';
@@ -40,13 +40,13 @@ const Wrapper = styled.div`
       animation: ${pulse} 30s infinite;
     }
   }
-  @media (max-width: ${props => props.theme.breakpoints.m}) {
+  @media (max-width: ${(props) => props.theme.breakpoints.m}) {
     height: 500px;
     .gatsby-image-wrapper {
       height: 500px;
     }
   }
-  @media (max-width: ${props => props.theme.breakpoints.s}) {
+  @media (max-width: ${(props) => props.theme.breakpoints.s}) {
     height: 400px;
     .gatsby-image-wrapper {
       height: 400px;
@@ -56,17 +56,17 @@ const Wrapper = styled.div`
 
 const Information = styled.div`
   margin-top: 2rem;
-  font-family: ${props => props.theme.fontFamily.heading};
+  font-family: ${(props) => props.theme.fontFamily.heading};
   a {
-    color: ${props => props.theme.colors.white.base};
+    color: ${(props) => props.theme.colors.white.base};
     transition: all 0.4s;
     border-bottom: 1px solid transparent;
     &:hover {
-      border-bottom: 1px solid ${props => props.theme.colors.white.base};
-      color: ${props => props.theme.colors.white.base};
+      border-bottom: 1px solid ${(props) => props.theme.colors.white.base};
+      color: ${(props) => props.theme.colors.white.base};
     }
     &:focus {
-      color: ${props => props.theme.colors.white.base};
+      color: ${(props) => props.theme.colors.white.base};
     }
   }
 `;
@@ -93,9 +93,11 @@ const Algorithm = ({ pageContext: { slug, left, right }, data: { markdownRemark:
         <Hero>
           <h1>{post.title}</h1>
           <Information>
-            <span className={hideS}>Category:
-            <Link to={`/categories/${kebabCase(post.category)}`}>{post.category}</Link>
-            </span> &mdash; {postNode.timeToRead} Minutes Read &mdash; {post.date}
+            <span className={hideS}>
+              Category:
+              <Link to={`/categories/${kebabCase(post.category)}`}>{post.category}</Link>
+            </span>{' '}
+            &mdash; {postNode.timeToRead} Minutes Read &mdash; {post.date}
           </Information>
         </Hero>
         <Wave />
@@ -106,16 +108,14 @@ const Algorithm = ({ pageContext: { slug, left, right }, data: { markdownRemark:
         <Line aria-hidden="true" />
         <Tags tags={post.tags} />
         <Note>
-          Read all posts from this category{' '}
-          <Link to={`/categories/${kebabCase(post.category)}`}>{post.category}</Link>
+          Read all posts from this category <Link to={`/categories/${kebabCase(post.category)}`}>{post.category}</Link>
         </Note>
       </Container>
       <Container>
         <InfoText>Related Reading</InfoText>
         <Suggestions left={left} right={right} secondary />
       </Container>
-      <Footer>
-      </Footer>
+      <Footer />
     </Layout>
   );
 };

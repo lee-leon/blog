@@ -1,9 +1,9 @@
 import React from 'react';
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
-import { hideS } from '../utilities/hide';
+import { hideS } from '../utilities';
 import Tags from './Tags';
 
 const Wrapper = styled.article`
@@ -18,16 +18,16 @@ const Information = styled.div`
     font-size: 2rem;
     margin-bottom: 1.25rem;
     display: inline-block;
-    color: ${props => props.theme.colors.black.base};
-    transition: all ${props => props.theme.transitions.default.duration};
+    color: ${(props) => props.theme.colors.black.base};
+    transition: all ${(props) => props.theme.transitions.default.duration};
     &:hover {
-      color: ${props => props.theme.colors.primary.base};
+      color: ${(props) => props.theme.colors.primary.base};
     }
   }
 `;
 
 const Statistics = styled.div`
-  color: ${props => props.theme.colors.black.lighter};
+  color: ${(props) => props.theme.colors.black.lighter};
 `;
 
 const Excerpt = styled.div`

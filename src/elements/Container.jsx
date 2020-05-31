@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
 const Wrapper = styled.div`
   margin: 0 auto;
   padding: 2rem 1.5rem;
-  max-width: ${props => props.theme.layout[props.type]};
+  max-width: ${(props) => props.theme.layout[props.type]};
 `;
 
 const Container = ({ children, type, className }) => (

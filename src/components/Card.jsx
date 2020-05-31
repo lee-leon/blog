@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { css, cx } from 'emotion';
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 import theme from '../../config/theme';
 
 const discord = css`
@@ -125,15 +125,21 @@ const Card = styled.div`
 
 export { Card };
 
-export const LinkCard = props => {
+export const LinkCard = (props) => {
   const { children } = props;
+  // eslint-disable-next-line react/destructuring-assignment
   const color = cx(generalStyle, props.className, {
+    // eslint-disable-next-line react/destructuring-assignment
     [discord]: props.discord,
+    // eslint-disable-next-line react/destructuring-assignment
     [instagram]: props.instagram,
+    // eslint-disable-next-line react/destructuring-assignment
     [behance]: props.behance,
+    // eslint-disable-next-line react/destructuring-assignment
     [youtube]: props.youtube,
   });
   return (
+    // eslint-disable-next-line react/destructuring-assignment
     <a href={props.link} rel="noreferrer noopener" target="_blank" className={color}>
       {children}
     </a>

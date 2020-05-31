@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 import theme from '../../config/theme';
 
 const StyledLink = styled(Link)`
@@ -33,16 +33,16 @@ const Wrapper = styled.div`
   display: inline-block;
   width: 100%;
   position: relative;
-  border-radius: ${props => props.theme.borderRadius.default};
+  border-radius: ${(props) => props.theme.borderRadius.default};
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  box-shadow: ${props => props.theme.shadow.feature.small.default};
-  transition: ${props => props.theme.transitions.boom.transition};
+  box-shadow: ${(props) => props.theme.shadow.feature.small.default};
+  transition: ${(props) => props.theme.transitions.boom.transition};
   img {
-    border-radius: ${props => props.theme.borderRadius.default};
+    border-radius: ${(props) => props.theme.borderRadius.default};
   }
   &:hover {
-    box-shadow: ${props => props.theme.shadow.feature.small.hover};
+    box-shadow: ${(props) => props.theme.shadow.feature.small.hover};
     transform: translateY(-12px);
     a {
       visibility: visible;

@@ -1,14 +1,14 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
 const Button = styled.button`
-  background: ${props => props.theme.button[props.type].background};
+  background: ${(props) => props.theme.button[props.type].background};
   border: none;
-  border-radius: ${props => props.theme.borderRadius.round};
-  box-shadow: ${props => props.theme.button[props.type].boxShadow};
-  color: ${props => props.theme.colors.white.base};
+  border-radius: ${(props) => props.theme.borderRadius.round};
+  box-shadow: ${(props) => props.theme.button[props.type].boxShadow};
+  color: ${(props) => props.theme.colors.white.base};
   cursor: pointer;
-  font-family: ${props => props.theme.fontFamily.heading};
+  font-family: ${(props) => props.theme.fontFamily.heading};
   display: inline-block;
   font-size: 1.5rem;
   font-weight: 700;
@@ -17,14 +17,14 @@ const Button = styled.button`
   min-width: 10rem;
   padding: 1.15rem 2.45rem;
   text-align: center;
-  transition: ${props => props.theme.transitions.default.transition};
+  transition: ${(props) => props.theme.transitions.default.transition};
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
   z-index: 10;
   -webkit-appearance: button;
   &:hover {
-    box-shadow: ${props => props.theme.button[props.type].hover.boxShadow};
+    box-shadow: ${(props) => props.theme.button[props.type].hover.boxShadow};
     transform: translateY(-8px);
   }
 `;

@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import { Helmet } from "react-helmet"
-import styled from '@emotion/styled'
+import { Helmet } from 'react-helmet';
+import styled from '@emotion/styled';
 import { Container, Layout } from '../elements';
 import config from '../../config/website';
 import ItemProject from '../components/ItemProject';
@@ -26,7 +26,7 @@ const Hci = ({
     <Header title="Next Generation HCI" />
     <Container type="big">
       <Base>
-        {edges.map(hci => (
+        {edges.map((hci) => (
           <ItemProject
             key={hci.node.frontmatter.title}
             path={hci.node.fields.slug}

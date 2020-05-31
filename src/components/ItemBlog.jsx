@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from '@emotion/styled'
-import {Link} from 'gatsby';
+import styled from '@emotion/styled';
+import { Link } from 'gatsby';
 import Img from 'gatsby-image';
 import kebabCase from 'lodash/kebabCase';
-import { hideS } from 'utilities';
+import { hideS } from '../utilities';
 
 const Wrapper = styled.article`
   display: flex;
@@ -16,15 +16,15 @@ const Wrapper = styled.article`
 
 const Image = styled.div`
   position: relative;
-  box-shadow: ${props => props.theme.shadow.feature.small.default};
-  transition: ${props => props.theme.transitions.boom.transition};
-  border-radius: ${props => props.theme.borderRadius.default};
+  box-shadow: ${(props) => props.theme.shadow.feature.small.default};
+  transition: ${(props) => props.theme.transitions.boom.transition};
+  border-radius: ${(props) => props.theme.borderRadius.default};
   min-height: 300px;
   img {
-    border-radius: ${props => props.theme.borderRadius.default};
+    border-radius: ${(props) => props.theme.borderRadius.default};
   }
   &:hover {
-    box-shadow: ${props => props.theme.shadow.feature.small.hover};
+    box-shadow: ${(props) => props.theme.shadow.feature.small.hover};
     transform: translateY(-12px);
   }
   a {
@@ -59,10 +59,10 @@ const Information = styled.div`
     font-size: 2rem;
     margin-bottom: 1.25rem;
     display: inline-block;
-    color: ${props => props.theme.colors.black.base};
-    transition: all ${props => props.theme.transitions.default.duration};
+    color: ${(props) => props.theme.colors.black.base};
+    transition: all ${(props) => props.theme.transitions.default.duration};
     &:hover {
-      color: ${props => props.theme.colors.primary.base};
+      color: ${(props) => props.theme.colors.primary.base};
     }
   }
 
@@ -77,7 +77,7 @@ const Information = styled.div`
 `;
 
 const Statistics = styled.div`
-  color: ${props => props.theme.colors.black.lighter};
+  color: ${(props) => props.theme.colors.black.lighter};
 `;
 
 const Excerpt = styled.div`
@@ -97,7 +97,8 @@ const ItemBlog = ({ path, cover, category, title, date, timeToRead, excerpt }) =
       </Link>
       <Statistics>
         <span className={hideS}>Category: </span>
-        <Link to={`/categories/${kebabCase(category)}`}>{category}</Link> &mdash; {timeToRead} Minutes Read &mdash; {date}
+        <Link to={`/categories/${kebabCase(category)}`}>{category}</Link> &mdash; {timeToRead} Minutes Read &mdash;{' '}
+        {date}
       </Statistics>
       <Excerpt>{excerpt}</Excerpt>
     </Information>

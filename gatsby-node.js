@@ -119,7 +119,7 @@ exports.createPages = ({ graphql, actions }) => {
             }
           }
         }
-      `).then(result => {
+      `).then((result) => {
         if (result.errors) {
           console.log(result.errors);
           reject(result.errors);
@@ -130,9 +130,9 @@ exports.createPages = ({ graphql, actions }) => {
         const systemsList = result.data.systems.edges;
         const hcisList = result.data.hcis.edges;
 
-        algorithmsList.forEach(algorithm => {
+        algorithmsList.forEach((algorithm) => {
           if (algorithm.node.frontmatter.tags) {
-            algorithm.node.frontmatter.tags.forEach(tag => {
+            algorithm.node.frontmatter.tags.forEach((tag) => {
               tagSet.add(tag);
             });
           }
@@ -141,7 +141,7 @@ exports.createPages = ({ graphql, actions }) => {
             categorySet.add(algorithm.node.frontmatter.category);
           }
 
-          const filtered = _.filter(algorithmsList, input => input.node.fields.slug !== algorithm.node.fields.slug);
+          const filtered = _.filter(algorithmsList, (input) => input.node.fields.slug !== algorithm.node.fields.slug);
           const sample = _.sampleSize(filtered, 2);
           const left = sample[0].node;
           const right = sample[1].node;
@@ -156,9 +156,9 @@ exports.createPages = ({ graphql, actions }) => {
             },
           });
         });
-        systemsList.forEach(system => {
+        systemsList.forEach((system) => {
           if (system.node.frontmatter.tags) {
-            system.node.frontmatter.tags.forEach(tag => {
+            system.node.frontmatter.tags.forEach((tag) => {
               tagSet.add(tag);
             });
           }
@@ -167,7 +167,7 @@ exports.createPages = ({ graphql, actions }) => {
             categorySet.add(system.node.frontmatter.category);
           }
 
-          const filtered = _.filter(systemsList, input => input.node.fields.slug !== system.node.fields.slug);
+          const filtered = _.filter(systemsList, (input) => input.node.fields.slug !== system.node.fields.slug);
           const sample = _.sampleSize(filtered, 2);
           const left = sample[0].node;
           const right = sample[1].node;
@@ -182,8 +182,8 @@ exports.createPages = ({ graphql, actions }) => {
             },
           });
         });
-        hcisList.forEach(hci => {
-          const filtered = _.filter(hcisList, input => input.node.fields.slug !== hci.node.fields.slug);
+        hcisList.forEach((hci) => {
+          const filtered = _.filter(hcisList, (input) => input.node.fields.slug !== hci.node.fields.slug);
           const sample = _.sampleSize(filtered, 2);
           const left = sample[0].node;
           const right = sample[1].node;
@@ -200,7 +200,7 @@ exports.createPages = ({ graphql, actions }) => {
         });
 
         const tagList = Array.from(tagSet);
-        tagList.forEach(tag => {
+        tagList.forEach((tag) => {
           createPage({
             path: `/tags/${_.kebabCase(tag)}/`,
             component: tagPage,
@@ -211,7 +211,7 @@ exports.createPages = ({ graphql, actions }) => {
         });
 
         const categoryList = Array.from(categorySet);
-        categoryList.forEach(category => {
+        categoryList.forEach((category) => {
           createPage({
             path: `/categories/${_.kebabCase(category)}/`,
             component: categoryPage,

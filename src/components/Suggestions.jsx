@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import theme from '../../config/theme';
@@ -13,7 +13,7 @@ const Row = styled.div`
 `;
 
 const ImageOverlay = styled.div`
-  border-radius: ${props => props.theme.borderRadius.default};
+  border-radius: ${(props) => props.theme.borderRadius.default};
   position: absolute;
   top: 0;
   right: 0;
@@ -21,15 +21,15 @@ const ImageOverlay = styled.div`
   left: 0;
   z-index: 2;
   opacity: 0;
-  transition: opacity ${props => props.theme.transitions.default.duration};
-  ${props =>
+  transition: opacity ${(props) => props.theme.transitions.default.duration};
+  ${(props) =>
     props.primary &&
     `background-image: linear-gradient(
     30deg,
     ${props.theme.colors.primary.light} 0%,
     ${props.theme.colors.primary.dark} 100%
   )`};
-  ${props =>
+  ${(props) =>
     props.secondary &&
     `background-image: linear-gradient(
     30deg,
@@ -41,12 +41,12 @@ const ImageOverlay = styled.div`
 const Wrapper = styled.article`
   position: relative;
   z-index: 100;
-  border-radius: ${props => props.theme.borderRadius.default};
-  box-shadow: ${props => props.theme.shadow.feature.small.default};
-  transition: ${props => props.theme.transitions.boom.transition};
+  border-radius: ${(props) => props.theme.borderRadius.default};
+  box-shadow: ${(props) => props.theme.shadow.feature.small.default};
+  transition: ${(props) => props.theme.transitions.boom.transition};
   height: 15rem;
   &:hover {
-    box-shadow: ${props => props.theme.shadow.feature.small.hover};
+    box-shadow: ${(props) => props.theme.shadow.feature.small.hover};
     transform: translateY(-12px);
     ${ImageOverlay} {
       opacity: 0.9;
@@ -114,9 +114,9 @@ const Image = styled.div`
   left: 0;
   bottom: 0;
   z-index: 1;
-  border-radius: ${props => props.theme.borderRadius.default};
+  border-radius: ${(props) => props.theme.borderRadius.default};
   img {
-    border-radius: ${props => props.theme.borderRadius.default};
+    border-radius: ${(props) => props.theme.borderRadius.default};
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -124,10 +124,10 @@ const Image = styled.div`
 `;
 
 const Title = styled.h4`
-  color: ${props => props.theme.colors.white.base};
+  color: ${(props) => props.theme.colors.white.base};
   text-align: center;
   margin-bottom: 0;
-  text-shadow: ${props => props.theme.shadow.text.small};
+  text-shadow: ${(props) => props.theme.shadow.text.small};
 `;
 
 const Suggestions = ({ left, right, primary, secondary }) => (

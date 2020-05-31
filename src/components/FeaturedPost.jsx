@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 import theme from '../../config/theme';
 
 const ImageOverlay = styled.div`
-  border-radius: ${props => props.theme.borderRadius.default};
+  border-radius: ${(props) => props.theme.borderRadius.default};
   position: absolute;
   top: 0;
   right: 0;
@@ -14,23 +14,23 @@ const ImageOverlay = styled.div`
   left: 0;
   z-index: 2;
   opacity: 0.1;
-  transition: opacity ${props => props.theme.transitions.default.duration};
+  transition: opacity ${(props) => props.theme.transitions.default.duration};
   background-image: linear-gradient(
     30deg,
-    ${props => props.theme.colors.secondary.light} 0%,
-    ${props => props.theme.colors.secondary.dark} 100%
+    ${(props) => props.theme.colors.secondary.light} 0%,
+    ${(props) => props.theme.colors.secondary.dark} 100%
   );
 `;
 
 const Wrapper = styled.article`
   position: relative;
   z-index: 100;
-  border-radius: ${props => props.theme.borderRadius.default};
-  box-shadow: ${props => props.theme.shadow.feature.small.default};
-  transition: ${props => props.theme.transitions.boom.transition};
+  border-radius: ${(props) => props.theme.borderRadius.default};
+  box-shadow: ${(props) => props.theme.shadow.feature.small.default};
+  transition: ${(props) => props.theme.transitions.boom.transition};
   height: 20rem;
   &:hover {
-    box-shadow: ${props => props.theme.shadow.feature.small.hover};
+    box-shadow: ${(props) => props.theme.shadow.feature.small.hover};
     transform: translateY(-12px);
     ${ImageOverlay} {
       opacity: 0.9;
@@ -48,7 +48,7 @@ const Wrapper = styled.article`
       margin-bottom: 2rem;
     }
   }
-  @media (max-width: ${props => props.theme.breakpoints.s}) {
+  @media (max-width: ${(props) => props.theme.breakpoints.s}) {
     height: 15rem;
   }
 `;
@@ -101,9 +101,9 @@ const Image = styled.div`
   bottom: 0;
   z-index: 1;
   object-fit: cover;
-  border-radius: ${props => props.theme.borderRadius.default};
+  border-radius: ${(props) => props.theme.borderRadius.default};
   img {
-    border-radius: ${props => props.theme.borderRadius.default};
+    border-radius: ${(props) => props.theme.borderRadius.default};
   }
   > div {
     position: static !important;
@@ -121,19 +121,19 @@ const Information = styled.div`
 `;
 
 const Category = styled.span`
-  color: ${props => props.theme.colors.black.base};
-  background-color: ${props => props.theme.colors.white.light};
+  color: ${(props) => props.theme.colors.black.base};
+  background-color: ${(props) => props.theme.colors.white.light};
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
-  border-radius: ${props => props.theme.borderRadius.round};
+  border-radius: ${(props) => props.theme.borderRadius.round};
   padding: 0.25rem 1rem;
 `;
 
 const Date = styled.div`
-  color: ${props => props.theme.colors.white.light};
+  color: ${(props) => props.theme.colors.white.light};
 `;
 
 const Title = styled.h2`
-  color: ${props => props.theme.colors.white.light};
+  color: ${(props) => props.theme.colors.white.light};
   text-align: left;
   margin-bottom: 0;
 `;

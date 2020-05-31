@@ -1,11 +1,11 @@
 /* eslint-disable react/require-default-props */
 import React from 'react';
-import { Helmet } from "react-helmet"
+import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
 import config from '../../config/website';
-import { cfl } from 'utilities';
+import { cfl } from '../utilities';
 
-const SEO = props => {
+const SEO = (props) => {
   const { postNode, postPath, postSEO } = props;
   let title;
   let description;

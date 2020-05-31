@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 import { css, keyframes } from '@emotion/core';
 
 import PropTypes from 'prop-types';
@@ -9,9 +9,9 @@ const Wrapper = styled.div`
   position: absolute;
   width: 100%;
   z-index: 1;
-  ${props => props.orientation === 'top' && 'top: 0'};
-  ${props => props.orientation === 'top' && 'transform: matrix(1, 0, 0, -1, 0, 0)'};
-  ${props => props.orientation === 'bottom' && 'bottom: 0'};
+  ${(props) => props.orientation === 'top' && 'top: 0'};
+  ${(props) => props.orientation === 'top' && 'transform: matrix(1, 0, 0, -1, 0, 0)'};
+  ${(props) => props.orientation === 'bottom' && 'bottom: 0'};
 `;
 
 const InnerWave = styled.div`
@@ -23,7 +23,7 @@ const InnerWave = styled.div`
     position: absolute;
     width: 100%;
     height: 5.5rem;
-    @media (max-width: ${props => props.theme.breakpoints.m}) {
+    @media (max-width: ${(props) => props.theme.breakpoints.m}) {
       height: 4.5rem;
     }
   }

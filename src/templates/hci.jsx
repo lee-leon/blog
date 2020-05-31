@@ -4,14 +4,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
-import { keyframes} from '@emotion/core';
+import { keyframes } from '@emotion/core';
 import Img from 'gatsby-image';
-import { Link, graphql } from 'gatsby';
-import { SEO, Container, Content, Line, Wave, Layout } from 'elements';
-import { Hero, InfoText } from 'utilities';
+import { graphql } from 'gatsby';
+import { SEO, Container, Content, Line, Wave, Layout } from '../elements';
+import { Hero, InfoText } from '../utilities';
 import Suggestions from '../components/Suggestions';
 import { Card } from '../components/Card';
-import Button from '../components/Button';
+// import Button from '../components/Button';
 import Footer from '../components/Footer';
 
 const pulse = keyframes`
@@ -43,13 +43,13 @@ const Wrapper = styled.div`
       animation: ${pulse} 30s infinite;
     }
   }
-  @media (max-width: ${props => props.theme.breakpoints.m}) {
+  @media (max-width: ${(props) => props.theme.breakpoints.m}) {
     height: 500px;
     .gatsby-image-wrapper {
       height: 500px;
     }
   }
-  @media (max-width: ${props => props.theme.breakpoints.s}) {
+  @media (max-width: ${(props) => props.theme.breakpoints.s}) {
     height: 400px;
     .gatsby-image-wrapper {
       height: 400px;
@@ -63,7 +63,7 @@ const CardWrapper = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   ${Card} {
-    color: ${props => props.theme.colors.black.base} !important;
+    color: ${(props) => props.theme.colors.black.base} !important;
     margin-bottom: 2rem;
     text-align: center;
     flex-basis: calc(99.9% * 1 / 3 - 1rem);
@@ -118,8 +118,7 @@ const Hci = ({ pageContext: { slug, left, right }, data: { markdownRemark: postN
         <InfoText>Related Reading</InfoText>
         <Suggestions left={left} right={right} />
       </Container>
-      <Footer>
-      </Footer>
+      <Footer />
     </Layout>
   );
 };

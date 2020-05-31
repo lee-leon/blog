@@ -1,16 +1,16 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import styled from '@emotion/styled'
-import { Helmet } from "react-helmet"
-import { Container, Layout } from 'elements';
+import styled from '@emotion/styled';
+import { Helmet } from 'react-helmet';
+import { Container, Layout } from '../elements';
 import config from '../../config/website';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import ItemTagCategory from '../components/ItemTagCategory';
 
 const StyledLink = styled(Link)`
-  color: ${props => props.theme.colors.white.light};
+  color: ${(props) => props.theme.colors.white.light};
 `;
 
 const Category = ({
@@ -27,7 +27,7 @@ const Category = ({
       <StyledLink to="/categories">All Categories</StyledLink>
     </Header>
     <Container>
-      {edges.map(edge => (
+      {edges.map((edge) => (
         <ItemTagCategory
           key={edge.node.frontmatter.title}
           title={edge.node.frontmatter.title}

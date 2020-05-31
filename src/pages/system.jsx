@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import { Helmet } from "react-helmet"
-import styled from '@emotion/styled'
-import { Container, Layout } from 'elements';
+import { Helmet } from 'react-helmet';
+import styled from '@emotion/styled';
+import { Container, Layout } from '../elements';
 import config from '../../config/website';
 import ItemBlog from '../components/ItemBlog';
 import Footer from '../components/Footer';
@@ -28,7 +28,7 @@ const System = ({
     </Header>
     <Container type="big">
       <Base>
-        {edges.map(system => (
+        {edges.map((system) => (
           <ItemBlog
             key={system.node.frontmatter.title}
             path={system.node.fields.slug}

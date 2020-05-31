@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import { Helmet } from "react-helmet"
-import styled from '@emotion/styled'
-import { Container, Layout } from 'elements';
+import { Helmet } from 'react-helmet';
+import styled from '@emotion/styled';
+import { Container, Layout } from '../elements';
 import config from '../../config/website';
 import ItemBlog from '../components/ItemBlog';
 import Footer from '../components/Footer';
@@ -26,7 +26,7 @@ const Algorithm = ({
     <Header title="Advanced Data Structure & Algorithms" />
     <Container type="big">
       <Base>
-        {edges.map(algorithm => (
+        {edges.map((algorithm) => (
           <ItemBlog
             key={algorithm.node.frontmatter.title}
             path={algorithm.node.fields.slug}

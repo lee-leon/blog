@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from '@emotion/styled'
-import { prism } from 'styles';
+import styled from '@emotion/styled';
+import { prism } from '../styles';
 
 const Wrapper = styled.div`
   padding: 2rem 0 1rem 0;
@@ -20,13 +20,13 @@ const Wrapper = styled.div`
   }
   a:not(.gatsby-resp-image-link):not(.anchor) {
     color: black;
-    box-shadow: inset 0 -2px 0 ${props => props.theme.tint.blue};
-    border-bottom: 1px solid ${props => props.theme.tint.blue};
-    transition: ${props => props.theme.transitions.default.transition};
+    box-shadow: inset 0 -2px 0 ${(props) => props.theme.tint.blue};
+    border-bottom: 1px solid ${(props) => props.theme.tint.blue};
+    transition: ${(props) => props.theme.transitions.default.transition};
     text-decoration: none;
     &:hover,
     &:focus {
-      background: ${props => props.theme.tint.blue};
+      background: ${(props) => props.theme.tint.blue};
       color: black;
     }
   }
@@ -65,18 +65,18 @@ const Wrapper = styled.div`
     float: none;
     top: 50%;
     transform: translateY(-50%);
-    @media (max-width: ${props => props.theme.breakpoints.m}) {
+    @media (max-width: ${(props) => props.theme.breakpoints.m}) {
       margin-left: -24px !important;
     }
     svg {
-      fill: ${props => props.theme.colors.black.base};
+      fill: ${(props) => props.theme.colors.black.base};
       visibility: hidden;
       display: block;
       opacity: 0;
       transition: all 0.3s ease-in-out;
       width: 20px;
       height: 20px;
-      @media (max-width: ${props => props.theme.breakpoints.m}) {
+      @media (max-width: ${(props) => props.theme.breakpoints.m}) {
         opacity: 0.2;
         visibility: visible !important;
         height: 16px;

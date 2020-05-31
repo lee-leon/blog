@@ -4,8 +4,8 @@
 /* eslint jsx-a11y/anchor-is-valid: 0 */
 
 import React from 'react';
-import { Helmet } from "react-helmet"
-import { Container, Layout } from 'elements';
+import { Helmet } from 'react-helmet';
+import { Container, Layout } from '../elements';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import config from '../../config/website';
@@ -268,9 +268,11 @@ const Datenschutzerklaerung = () => (
         </p>
         <p>
           Google ist unter dem Privacy-Shield-Abkommen zertifiziert und bietet hierdurch eine Garantie, das europäische
-          Datenschutzrecht einzuhalten (<a href="https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&status=Active">
+          Datenschutzrecht einzuhalten (
+          <a href="https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&status=Active">
             https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&status=Active
-          </a>).
+          </a>
+          ).
         </p>
         <p>
           Google wird diese Informationen in unserem Auftrag benutzen, um die Nutzung unseres Onlineangebotes durch die
@@ -296,11 +298,10 @@ const Datenschutzerklaerung = () => (
         </p>
         <p>
           Weitere Informationen zur Datennutzung durch Google, Einstellungs- und Widerspruchsmöglichkeiten, erfahren Sie
-          in der Datenschutzerklärung von Google (<a href="https://policies.google.com/technologies/ads">
-            https://policies.google.com/technologies/ads
-          </a>) sowie in den Einstellungen für die Darstellung von Werbeeinblendungen durch Google (<a href="https://adssettings.google.com/authenticated">
-            https://adssettings.google.com/authenticated
-          </a>).
+          in der Datenschutzerklärung von Google (
+          <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a>) sowie
+          in den Einstellungen für die Darstellung von Werbeeinblendungen durch Google (
+          <a href="https://adssettings.google.com/authenticated">https://adssettings.google.com/authenticated</a>).
         </p>
         <p>Die personenbezogenen Daten der Nutzer werden nach 14 Monaten gelöscht oder anonymisert.</p>
         <h4>Widerspruch gegen Datenerfassung</h4>

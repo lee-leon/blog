@@ -1,9 +1,9 @@
 /* eslint max-len: 0 */
 
 import React from 'react';
-import { Helmet } from "react-helmet"
-import styled from '@emotion/styled'
-import { Container, Layout } from 'elements';
+import { Helmet } from 'react-helmet';
+import styled from '@emotion/styled';
+import { Container, Layout } from '../elements';
 import Footer from '../components/Footer';
 import { LinkCard } from '../components/Card';
 import Header from '../components/Header';

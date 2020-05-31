@@ -5,8 +5,8 @@ import { keyframes, css } from '@emotion/core';
 import Img from 'gatsby-image';
 import { Link, graphql } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
-import { SEO, Container, Content, Wave, Line, Layout } from 'elements';
-import { hideS, Hero, InfoText } from 'utilities';
+import { SEO, Container, Content, Wave, Line, Layout } from '../elements';
+import { hideS, Hero, InfoText } from '../utilities';
 import Tags from '../components/Tags';
 import Suggestions from '../components/Suggestions';
 import Button from '../components/Button';
@@ -41,13 +41,13 @@ const Wrapper = styled.div`
       animation: ${pulse} 30s infinite;
     }
   }
-  @media (max-width: ${props => props.theme.breakpoints.m}) {
+  @media (max-width: ${(props) => props.theme.breakpoints.m}) {
     height: 500px;
     .gatsby-image-wrapper {
       height: 500px;
     }
   }
-  @media (max-width: ${props => props.theme.breakpoints.s}) {
+  @media (max-width: ${(props) => props.theme.breakpoints.s}) {
     height: 400px;
     .gatsby-image-wrapper {
       height: 400px;
@@ -57,17 +57,17 @@ const Wrapper = styled.div`
 
 const Information = styled.div`
   margin-top: 2rem;
-  font-family: ${props => props.theme.fontFamily.heading};
+  font-family: ${(props) => props.theme.fontFamily.heading};
   a {
-    color: ${props => props.theme.colors.white.base};
+    color: ${(props) => props.theme.colors.white.base};
     transition: all 0.4s;
     border-bottom: 1px solid transparent;
     &:hover {
-      border-bottom: 1px solid ${props => props.theme.colors.white.base};
-      color: ${props => props.theme.colors.white.base};
+      border-bottom: 1px solid ${(props) => props.theme.colors.white.base};
+      color: ${(props) => props.theme.colors.white.base};
     }
     &:focus {
-      color: ${props => props.theme.colors.white.base};
+      color: ${(props) => props.theme.colors.white.base};
     }
   }
 `;
@@ -95,7 +95,8 @@ const System = ({ pageContext: { slug, left, right }, data: { markdownRemark: sy
           <h1>{system.title}</h1>
           <Information>
             <span className={hideS}>Category: </span>
-            <Link to={`/categories/${kebabCase(system.category)}`}>{system.category}</Link> &mdash; {systemNode.timeToRead} Minutes Read &mdash;  {system.date}
+            <Link to={`/categories/${kebabCase(system.category)}`}>{system.category}</Link> &mdash;{' '}
+            {systemNode.timeToRead} Minutes Read &mdash; {system.date}
           </Information>
         </Hero>
         <Wave />
@@ -106,7 +107,7 @@ const System = ({ pageContext: { slug, left, right }, data: { markdownRemark: sy
         <Line aria-hidden="true" />
         <Tags tags={system.tags} />
         <Note>
-            Read all posts from this category{' '}
+          Read all posts from this category{' '}
           <Link to={`/categories/${kebabCase(system.category)}`}>{system.category}</Link>
         </Note>
       </Container>
@@ -114,8 +115,7 @@ const System = ({ pageContext: { slug, left, right }, data: { markdownRemark: sy
         <InfoText>Related Reading</InfoText>
         <Suggestions left={left} right={right} secondary />
       </Container>
-      <Footer>
-      </Footer>
+      <Footer />
     </Layout>
   );
 };
